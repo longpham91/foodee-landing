@@ -2,7 +2,7 @@
   "name": "foodee-landing",
   "version": "1.0.0",
   "description": "Foodee's landing page",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node ./bin/www"
   },
