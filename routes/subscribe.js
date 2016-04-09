@@ -1,11 +1,12 @@
 var mcapi = require('mailchimp-api/mailchimp');
 
-mc = new mcapi.Mailchimp('');
+mc = new mcapi.Mailchimp('221a3fdf80cf4a0702f6af91687ca670-us13');
 
 exports.subscribe = function(req, res){
-  mc.lists.subscribe({id: req.params.id, email:{email:req.body.email}}, function(data) {
+  var listId = '45785cb28f';
+  mc.lists.subscribe({id: listId, email:{email:req.body.email}}, function(data) {
       req.session.success_flash = 'User subscribed successfully! Look for the confirmation email.';
-      res.redirect('/lists/'+req.params.id);
+      res.redirect('/lists/'+listId);
     },
     function(error) {
       if (error.error) {
@@ -13,6 +14,6 @@ exports.subscribe = function(req, res){
       } else {
         req.session.error_flash = 'There was an error subscribing that user';
       }
-      res.redirect('/lists/'+req.params.id);
+      res.redirect('/lists/'+listId);
     });
 };
