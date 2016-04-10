@@ -10,8 +10,8 @@ exports.post = function(request, response) {
         port: 465,
         secure: true, // use SSL
         auth: {
-            user: "longpham91@gmail.com",
-            pass: "BerlinSaigon26121991"
+            user: "contact@foddee.io",
+            pass: "startup101"
         }
     });
     
@@ -22,7 +22,7 @@ exports.post = function(request, response) {
     
     var mailOptions = {
         from: email, // sender address 
-        to: 'longpham91@gmail.com', // list of receivers 
+        to: 'contact@foddee.io', // list of receivers 
         subject: 'Website Contact Form: ' + name, // Subject line
         html: 'You have received a new message from your website contact form.<br /><br />Here are the details:<br /><br /><strong>Name</strong>: '+ name + '<br /><br /><strong>Email</strong>: ' + email + '<br /><br /><strong>Phone</strong>: ' + phone + '<br /><br /><strong>Message</strong>:<br />' + message
     };
