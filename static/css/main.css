@@ -6,17 +6,18 @@
    2.main
    3.video
    4.Features
-   5.Subscription form
-   6.Countdown styles
-   7.Twitter feed 
-   8.Contact 
-   9.contact Form Validation
-   10.footer
-   11.Social
-   12.scroll top
-   13.Small devices (tablets, 768px and up)
-   14.Medium devices (desktops, 992px and up)
-   15.small devices
+   5.Review
+   6.Download
+   7.Team
+   8.Subscription form
+   9.Twitter feed 
+   10.Contact 
+   11.contact Form Validation
+   12.footer
+   13.Social
+   14.scroll top
+   15.Small devices (tablets, 768px and up)
+   16.Medium devices (desktops, 992px and up)
 */
    
    
@@ -101,6 +102,8 @@ li {
 .main h2 { font-weight: 300; }
 
 .main h1 span { font-weight: 400; }
+
+.main h2 { font-size: 20px; }
 
 .welcome-message { padding-top: 1.5em; }
 
@@ -252,9 +255,122 @@ transform:translateY(0);
   color: #B2B2B2;
 }
 
+/* ==========================================================================
+   5.reviews
+   ========================================================================== */
+.reviews blockquote {
+  border-left: none;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+}
+
+.reviews blockquote p {
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+
+.reviews blockquote .fa-quote-left,
+.reviews blockquote .fa-quote-right {
+  position: absolute;
+  color: #E4E4E4;
+  font-size: 1em;
+}
+
+blockquote .fa-quote-left {
+  left: 2px;
+  top: -20px;
+}
+
+blockquote .fa-quote-right {
+  right: 2px;
+  bottom: -20px;
+}
+
+.reviews figure,
+.reviews blockquote p { margin-bottom: .75em; }
+
+.reviews blockquote cite { color: #777; }
 
 /* ==========================================================================
-   5.Subscription form 
+   6.download
+   ========================================================================== */
+
+.download { background: #3498db; }
+
+.download header h2,
+#download header h3,
+.download i { color: #fff; }
+
+.download i {
+  font-size: 3.5em;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+}
+
+.download i:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.download a {
+  padding-right: 4.5em;
+  display: inline-block;
+}
+
+.download a:last-child { padding-right: 0; }
+
+/* ==========================================================================
+   7.team
+   ========================================================================== */
+
+
+
+.team-slider .item { margin: 3px; }
+
+.owl-wrapper-outer { margin-bottom: 2.25em; }
+
+.team-details {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.team-details figcaption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3em 1em 1.5em;
+  background: rgba(52, 152, 219, 0.89);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  position: absolute;
+}
+
+.team-details:hover figcaption { opacity: 1; }
+
+.team-details figcaption h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.team-details img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-details figcaption p { color: #fff; }
+
+.team .social { margin-top: 1.5em; }
+
+/* ==========================================================================
+   8.Subscription form 
    ========================================================================== */
 
    
@@ -365,33 +481,7 @@ transform:translateY(0);
 .error-cf i { padding-right: .5em; }
 
 /* ==========================================================================
-   6.Countdown styles
-   ========================================================================== */
-ul.countdown {
-  list-style: none;
-  display: block;
-  margin-bottom: 0;
-  padding: 0 0 3em;
-}
-
-ul.countdown li { display: inline-block; }
-
-ul.countdown li span { font-size: 36px; }
-
-ul.countdown li.seperator {
-  font-size: 30px;
-  line-height: 50px;
-  vertical-align: top;
-  padding: 0 8px;
-}
-
-ul.countdown li p {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-/* ==========================================================================
-   7.Twitter feed
+   9.Twitter feed
    ========================================================================== */
 
 .twitter-feed {
@@ -423,12 +513,10 @@ ul.countdown li p {
 .tweet { font-size: 18px; }
 
 /* ==========================================================================
-   8.Contact
+   10.Contact
    ========================================================================== */
  
-.video header,
-.screenshot header,
-.contact header { margin-bottom: 3em; }
+.section-spacing header { margin-bottom: 3em; }
 
 .contact-form .form-control {
   border-color: #ddd;
@@ -441,7 +529,7 @@ ul.countdown li p {
 .contact .btn-default { width: 100%; }
 
 /* ==========================================================================
-   9.contact Form Validation
+   11.contact Form Validation
    ========================================================================== */
  
 .contact-form label.error {
@@ -487,12 +575,13 @@ ul.countdown li p {
 .contact-form .valid { border-color: #2ecc71; }
 
 /* ==========================================================================
-   10.footer
+   12.footer
    ========================================================================== */
    
 .site-footer,
 .video,
- .sub-form { background: #F7F7F7; }
+.sub-form,
+ .reviews { background: #F7F7F7; }
 
 .site-footer.section-spacing { padding: 4.5em 0; }
 
@@ -539,7 +628,7 @@ button.close {
 .modal-body { padding: 1.5em; }
 
 /* ==========================================================================
-   11.Social 
+   13.Social 
    ========================================================================== */
 
 
@@ -570,7 +659,7 @@ button.close {
 }
 
 /* ==========================================================================
-   12.scroll top
+   14.scroll top
    ========================================================================== */
    
 .scroll-top { margin-bottom: 0; }
@@ -594,7 +683,7 @@ button.close {
 .scroll-top a:hover { background: #3498db; }
 
 /* ==========================================================================
-   13.Small devices (tablets, 768px and up)
+   15.Small devices (tablets, 768px and up)
    ========================================================================== */
    
 @media (min-width: 768px) {
@@ -605,25 +694,19 @@ button.close {
 
 .main h1 { font-size: 60px; }
 
-.main h2 { font-size: 48px; }
+.main h2 { font-size: 27px; }
 
 .action-btn .btn-default { display: inline-block; }
 
 .action-btn a:first-child { margin: 0 1.5em 0 0; }
 
-ul.countdown li span { font-size: 48px; }
+.reviews blockquote p { font-size: 22px; }
 
-ul.countdown li.seperator {
-  font-size: 36px;
-  line-height: 68px;
-  padding: 0 20px;
-}
-
-ul.countdown li p { font-size: 20px; }
+.download i { font-size: 4em; }
 }
 
 /* ==========================================================================
-   14.Medium devices (desktops, 992px and up) 
+   16.Medium devices (desktops, 992px and up) 
    ========================================================================== */
    
 @media (min-width: 992px) {
@@ -679,6 +762,13 @@ body { height: 100%; }
   text-align: inherit;
 }
 
+.reviews blockquote .fa-quote-left { left: -50px; }
+
+.reviews blockquote .fa-quote-right { right: -50px; }
+
+.reviews blockquote .fa-quote-left,
+.reviews blockquote .fa-quote-right { font-size: 1.5em; }
+
 .sub-form .form-control {
   width: 50%;
   margin-bottom: 0;
@@ -710,24 +800,4 @@ body { height: 100%; }
   background: url(../img/load.gif) no-repeat center center;
   margin: -170px 0 0 -100px;
 }
-}
-
-/* ==========================================================================
-   16.small devices 
-   ========================================================================== */
-   
-
-
-@media (max-width: 320px) {
-
-ul.countdown li span { font-size: 28.833px; }
-
-ul.countdown li.seperator {
-  font-size: 25.629px;
-  line-height: 38.439px;
-  vertical-align: top;
-  padding: 0 2px;
-}
-
-ul.countdown li p { font-size: 12.642px; }
 }
