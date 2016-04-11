@@ -4,6 +4,7 @@ var app = express();
 var router = express.Router();
 var bodyParser = require('body-parser');
 var MessageController = require('./routes/message');
+var SubscribeController = require('./routes/subscribe');
 
 /**
  * Routing & middlewares
@@ -14,6 +15,7 @@ app.use(bodyParser.json({ extended: true }));
 app.use(router);
 
 router.post('/sendmessage', MessageController.post);
+router.post('/subscribe', SubscribeController.post);
 
 app.use(function (request, response) {
 	response.status(404).json({
