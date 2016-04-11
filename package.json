@@ -8,9 +8,7 @@
   "description": "Foodee's landing page",
   "main": "server.js",
   "scripts": {
-    "start": "node node_modules/.bin/forever start server.js",
-    "stop": "node node_modules/.bin/forever stopall",
-    "restart": "node node_modules/.bin/forever restart server.js"
+  "start": "node server.js"
   },
   "repository": {
     "type": "git",
