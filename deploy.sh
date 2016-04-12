@@ -1,0 +1,2 @@
+heroku create
+heroku open
