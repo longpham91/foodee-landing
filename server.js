@@ -4,7 +4,7 @@ var app = express();
 var router = express.Router();
 var bodyParser = require('body-parser');
 var MessageController = require('./routes/message');
-var SubscribeController = require('./routes/subscribe');
+// var SubscribeController = require('./routes/subscribe');
 
 /**
  * Routing & middlewares
