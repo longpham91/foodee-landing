@@ -119,8 +119,8 @@ li {
 .action-btn .btn-default:hover,
 .action-btn .btn-default:focus,
 .action-btn .btn-default:active {
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: #F98C8C;
+  border-color: #F98C8C;
 }
 
 .action-btn a:first-child { margin: 0 0 0.75em 0; }
@@ -437,8 +437,8 @@ blockquote .fa-quote-right {
 .btn-default:focus,
 .btn-default:active {
   color: #fff;
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: #F98C8C;
+  border-color: #F98C8C;
 }
 
 .btn:active:focus,
@@ -618,7 +618,7 @@ button.close {
 
 .close:hover,
 .close:focus {
-  color: #2980b9;
+  color: #F98C8C;
   text-decoration: none;
   cursor: pointer;
   opacity: 1;
