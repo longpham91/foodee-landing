@@ -801,3 +801,5 @@ body { height: 100%; }
   margin: -170px 0 0 -100px;
 }
 }
+
+.navbar-brand>img { display: block; width: 137px; height: 41px; }
