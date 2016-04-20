@@ -280,7 +280,7 @@ transform:translateY(0);
 
 blockquote .fa-quote-left {
   left: 2px;
-  top: -20px;
+  top: 0px;
 }
 
 blockquote .fa-quote-right {
