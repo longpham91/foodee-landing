@@ -297,7 +297,7 @@ blockquote .fa-quote-right {
    6.download
    ========================================================================== */
 
-.download { background: #ef5454; }
+.download, { background: #ef5454; }
 
 .download header h2,
 #download header h3,
@@ -803,3 +803,28 @@ body { height: 100%; }
 }
 
 .navbar-brand>img { display: block; width: 137px; height: 41px; }
+
+.sub-form, { background: #ef5454; }
+
+.sub-form header h2,
+.sub-form header h3,
+.sub-form i { color: #fff; }
+
+.sub-form i {
+  font-size: 3.5em;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+}
+
+.download i:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.download a {
+  padding-right: 4.5em;
+  display: inline-block;
+}
+
+.download a:last-child { padding-right: 0; }
