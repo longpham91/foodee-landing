@@ -398,7 +398,10 @@ blockquote .fa-quote-right {
   box-shadow: none;
 }
 
-.sub-form .btn-default { padding: 1em 5em; }
+.sub-form .btn-default { 
+  padding: 1em 5em; 
+  border: solid 1px;
+}
 
 .sub-form .form-control,
 .sub-form .btn-default {
