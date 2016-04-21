@@ -804,7 +804,7 @@ body { height: 100%; }
 
 .navbar-brand>img { display: block; width: 137px; height: 41px; }
 
-.sub-form, { background: #ef5454; }
+.sub-form { background: #ef5454; }
 
 .sub-form header h2,
 .sub-form header h3,
@@ -816,15 +816,15 @@ body { height: 100%; }
   transition: transform 1s ease;
 }
 
-.download i:hover {
+.sub-form i:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-.download a {
+.sub-form a {
   padding-right: 4.5em;
   display: inline-block;
 }
 
-.download a:last-child { padding-right: 0; }
+.sub-form a:last-child { padding-right: 0; }
