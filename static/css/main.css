@@ -27,7 +27,7 @@
 
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   font-size: 16px;
@@ -831,3 +831,7 @@ body { height: 100%; }
 }
 
 .sub-form a:last-child { padding-right: 0; }
+
+.features article h2 {
+  font-weight: 200;
+}
