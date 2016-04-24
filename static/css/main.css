@@ -225,7 +225,7 @@ transform:translateY(0);
 .section-spacing header h3,
 .features h4 { margin-top: 0; }
 
-.section-spacing h2 {
+.section-spacing h1 {
   color: #333;
   font-weight: 300;
   text-transform: uppercase;
