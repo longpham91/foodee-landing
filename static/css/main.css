@@ -847,10 +847,5 @@ body { height: 100%; }
   height: auto;
 }
 .my-gallery figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-}
-.my-gallery figcaption {
   display: none;
 }
