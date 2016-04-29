@@ -913,44 +913,7 @@ a.my-gallery__img--main {
     max-width: 500px;
   }
   .my-gallery a {
-    width: 120px;
+    width: 100%;
     margin: 0 4px 4px 0;
-  }
-  a.my-gallery__img--main {
-    width: 164px;
-  }
-  }
-}
-
-/*@media screen and (max-width: 490px) {
-  .my-gallery a {
-    width: 100px;
-    margin: 0 4px 4px 0;
-  }
-  a.my-gallery__img--main {
-    width: 137px;
-  }
-}
-*/
-
-
-@media screen and (max-width: 450px) {
-  .my-gallery a {
-    width: 95px;
-    margin: 0 1px 1px 0;
-  }
-  a.my-gallery__img--main {
-    width: 127px;
-  }
-}
-
-
-@media screen and (max-width: 350px) {
-  .my-gallery a {
-    width: 81px;
-margin: 0 1px 1px 0;
-  }
-  a.my-gallery__img--main {
-    width: 109px;
   }
 }
