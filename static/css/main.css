@@ -917,3 +917,7 @@ a.my-gallery__img--main {
     margin: 0 8px 8px 0;
   }
 }
+
+.hero-img, .feature-img {
+  max-width: 80%;
+}
