@@ -752,9 +752,9 @@ body { height: 100%; }
   float: right;
 }
 
-.hero-img { margin-top: 1.5em; }
+.hero-img { margin-top: 1.5em; max-width: 80%; }
 
-.hero-img, .feature-img { max-width: 70%; }
+.feature-img { max-width: 70%; }
 
 .welcome-message { padding-top: 6.75em; }
 
