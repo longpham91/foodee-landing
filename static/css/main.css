@@ -754,7 +754,7 @@ body { height: 100%; }
 
 .hero-img { margin-top: 1.5em; }
 
-.hero-img, .feature-img { max-width: 80%; }
+.hero-img, .feature-img { max-width: 70%; }
 
 .welcome-message { padding-top: 6.75em; }
 
