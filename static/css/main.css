@@ -754,6 +754,8 @@ body { height: 100%; }
 
 .hero-img { margin-top: 1.5em; }
 
+.hero-img, .feature-img { max-width: 80%; }
+
 .welcome-message { padding-top: 6.75em; }
 
 .action-btn { margin: 1.5em 0 0; }
@@ -916,8 +918,4 @@ a.my-gallery__img--main {
     width: 100%;
     margin: 0 8px 8px 0;
   }
-}
-
-.hero-img, .feature-img {
-  max-width: 80%;
 }
