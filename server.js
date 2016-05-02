@@ -9,7 +9,13 @@ var SubscribeController = require('./routes/subscribe');
  * Routing & middlewares
  */
 app.use(express.static(__dirname + '/static'));
-app.use(bodyParser.json({ extended: true }));
+
+// parse application/json
+app.use(bodyParser.json());
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(router);
 
 router.post('/sendmessage', MessageController.post);
