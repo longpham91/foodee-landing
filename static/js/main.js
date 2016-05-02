@@ -170,7 +170,7 @@ $(function() {
             $(form).ajaxSubmit({
                 type: "POST",
                 data: $(form).serialize(),
-                url: "php/contact-me.php",
+                url: "/sendmessage",
                 success: function() {
                     $('#contact-form :input').attr('disabled', 'disabled');
                     $('#contact-form').fadeTo("slow", 0.15, function() {
