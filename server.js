@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var router = express.Router();
 var bodyParser = require('body-parser');
+var favicon = require('serve-favicon');
 var MessageController = require('./routes/message');
 var SubscribeController = require('./routes/subscribe');
 
@@ -15,6 +16,9 @@ app.use(bodyParser.json());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// display favicon
+app.use(favicon(__dirname + '/static/img/favicon.ico'));
 
 app.use(router);
 
