@@ -6,12 +6,10 @@ exports.subscribe = function (req, res, next) {
 	var listId = '45785cb28f';
 	mc.lists.subscribe({id: listId, email: {email: req.body.email}}, function (data) {
 		// req.session.success_flash = 'User subscribed successfully! Look for the confirmation email.';
-		return res.redirect('/lists/' + listId);
+		return res.json({message: 'Thank you ! You have subscribed to our customer list successfully'});
 	}, function (error) {
 		if (error) {
-			res.error = error.error;
-			return next();
+			return res.status(400).json({message: error.error});
 		}
-		return res.json({message: 'Thank you ! You have subscribed to our customer list successfully'});
 	});
 };

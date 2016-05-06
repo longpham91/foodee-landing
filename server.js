@@ -27,7 +27,7 @@ router.post('/subscribe', SubscribeController.subscribe);
 
 app.use(function (request, response) {
 	response.status(404).json({
-		message: response.error,
+		message: 'Oops! You may get lost!',
 		code: 'E_NOTFOUND'
 	});
 });
