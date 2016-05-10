@@ -915,12 +915,12 @@ a.my-gallery__img--main {
   }
 }
 
-.status-mc { display: none; }
+.status-mc, .error-mc { display: none; }
 
-.sub-form .status-mc p {
+.sub-form .status-mc p, .sub-form .error-mc p {
   position: absolute;
   display: block;
-  top: 20%;
+  top: -25%;
   left: 0;
   right: 0;
   text-align: center;
@@ -929,23 +929,23 @@ a.my-gallery__img--main {
   margin: 0 auto;
 }
 
-.status-mc p {
+.status-mc p, .error-mc p {
   padding: 1em 2em;
   margin-bottom: 0;
   border-radius: 7px;
   font-weight: 600;
 }
 
-.status-mc p {
+.success-mc p {
   background: #dff0d8;
   color: #3c763d;
   border: 1px solid rgba(60, 118, 61, 0.18);
 }
 
-.status-mc p {
+.error-mc p {
   background: #FFE5E5;
   color: #ea5050;
   border: 1px solid rgba(169, 82, 82, 0.18);
 }
 
-.status-mc i { padding-right: .5em; }
+.status-mc i, .error-mc i { padding-right: .5em; }

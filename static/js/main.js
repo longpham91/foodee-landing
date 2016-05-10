@@ -98,9 +98,7 @@ $(function () {
 	}
 
 	function formResult (data) {
-		$('.status-mc p').html(data.message);
-		$('#mc-form input').val('');
-		$('.status-mc').fadeIn();
+		
 	}
 
 	function onSubmit () {
@@ -114,10 +112,14 @@ $(function () {
 					email: $('#mailchimp-email').val(),
 				},
 				success: function (data) {
-					formResult(data);
+					$('.status-mc p').html(data.message);
+					$('#mc-form input').val('');
+					$('.status-mc').fadeIn();
 				},
 				error: function (data) {
-					formResult(data.responseJSON);
+					$('.error-mc p').html(data.message);
+					$('#mc-form input').val('');
+					$('.error-mc').fadeIn();
 				}
 			});
 			return false;
