@@ -915,9 +915,9 @@ a.my-gallery__img--main {
   }
 }
 
-.status-mc, .error-mc { display: none; }
+.success-mc, .error-mc { display: none; }
 
-.sub-form .status-mc p, .sub-form .error-mc p {
+.sub-form .success-mc p, .sub-form .error-mc p {
   position: absolute;
   display: block;
   top: -25%;
@@ -929,7 +929,7 @@ a.my-gallery__img--main {
   margin: 0 auto;
 }
 
-.status-mc p, .error-mc p {
+.success-mc p, .error-mc p {
   padding: 1em 2em;
   margin-bottom: 0;
   border-radius: 7px;
@@ -948,4 +948,4 @@ a.my-gallery__img--main {
   border: 1px solid rgba(169, 82, 82, 0.18);
 }
 
-.status-mc i, .error-mc i { padding-right: .5em; }
+.success-mc i, .error-mc i { padding-right: .5em; }

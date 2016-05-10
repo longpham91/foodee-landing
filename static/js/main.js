@@ -112,9 +112,9 @@ $(function () {
 					email: $('#mailchimp-email').val(),
 				},
 				success: function (data) {
-					$('.status-mc p').html(data.message);
+					$('.success-mc p').html(data.message);
 					$('#mc-form input').val('');
-					$('.status-mc').fadeIn();
+					$('.success-mc').fadeIn();
 				},
 				error: function (data) {
 					$('.error-mc p').html(data.message);
