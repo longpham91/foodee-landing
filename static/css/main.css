@@ -449,11 +449,6 @@ blockquote .fa-quote-right {
 .btn:focus,
 .btn-default:active { outline: none; }
 
-#mc-notification { margin: 1.5em 0 0; }
-
-#mc-notification .alert,
-#mc-notification .success { display: inline-block; }
-
 .success,
 .alert,
 .success-cf p,
@@ -919,3 +914,38 @@ a.my-gallery__img--main {
     margin: 0 8px 8px 0;
   }
 }
+
+.status-mc { display: none; }
+
+.sub-form .status-mc p {
+  position: absolute;
+  display: block;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.status-mc p {
+  padding: 1em 2em;
+  margin-bottom: 0;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.status-mc p {
+  background: #dff0d8;
+  color: #3c763d;
+  border: 1px solid rgba(60, 118, 61, 0.18);
+}
+
+.status-mc p {
+  background: #FFE5E5;
+  color: #ea5050;
+  border: 1px solid rgba(169, 82, 82, 0.18);
+}
+
+.status-mc i { padding-right: .5em; }

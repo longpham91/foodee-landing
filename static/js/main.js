@@ -98,9 +98,9 @@ $(function () {
 	}
 
 	function formResult (data) {
-		$('#mc-notification').css('color', 'yellow');
-		$('#mc-notification').html(data.message);
+		$('.status-mc p').html(data.message);
 		$('#mc-form input').val('');
+		$('.status-mc').fadeIn();
 	}
 
 	function onSubmit () {
