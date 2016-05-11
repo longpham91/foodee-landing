@@ -120,6 +120,9 @@ $(function () {
 					$('.error-mc p').html(data.responseJSON);
 					$('#mc-form input').val('');
 					$('.error-mc').fadeIn();
+					setTimeout(function() {
+						$('.error-mc').fadeOut();
+					}, 3000);
 				}
 			});
 			return false;
