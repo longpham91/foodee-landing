@@ -98,7 +98,6 @@ $(function () {
 	}
 
 	function formResult (data) {
-		
 	}
 
 	function onSubmit () {
@@ -117,10 +116,10 @@ $(function () {
 					$('.success-mc').fadeIn();
 				},
 				error: function (data) {
-					$('.error-mc p').html(data.responseJSON);
+					$('.error-mc p').html(data.responseJSON.message);
 					$('#mc-form input').val('');
 					$('.error-mc').fadeIn();
-					setTimeout(function() {
+					setTimeout(function () {
 						$('.error-mc').fadeOut();
 					}, 3000);
 				}
