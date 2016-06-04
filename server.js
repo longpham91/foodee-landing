@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 var MessageController = require('./routes/message');
 var SubscribeController = require('./routes/subscribe');
-
+var compression = require('compression');
 /**
  * Routing & middlewares
  */
@@ -13,6 +13,8 @@ app.use(express.static(__dirname + '/static'));
 
 // parse application/json
 app.use(bodyParser.json());
+
+app.use(compression());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
