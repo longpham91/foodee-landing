@@ -28,7 +28,11 @@
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-80985523-1', 'auto');
-        ga('send', 'pageview');
+        ga('send', 'pageview', location.pathname , {
+            hitCallback: function() {
+              console.log("Sent analytics data with path : " + location.pathname);
+            }
+        });
 
     </script>
 </head>
@@ -174,7 +178,7 @@
                 <div class="col-md-6">
                     <article>
                         <h2>Be Full. Be Creative.</h2>
-                        <p>With Foodee, you can freely create and customize your own food collections. See something good, “pin” it  down to try for later. 
+                        <p>With Foodee, you can freely create and customize your own food collections. See something good, “pin” it  down to try for later.
                             <br /><br />Enjoy! Bon Appetit!</p>
                     </article>
                 </div>
