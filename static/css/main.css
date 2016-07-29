@@ -840,17 +840,22 @@ body { height: 100%; }
   height: auto;
   float: left;
 }
+
+.my-gallery .item { margin: 3px; }
+
 .my-gallery a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-touch-callout: none;
   display: block;
   float: left;
   margin: 0 12px 12px 0;
-  width: 215px;
+  width: inherit;
   line-height: 0;
 }
 
-
+.my-gallery img {
+  width: inherit;
+}
 
 a.my-gallery__img--main {
   width: auto;
