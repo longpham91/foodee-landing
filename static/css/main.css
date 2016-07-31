@@ -330,7 +330,7 @@ blockquote .fa-quote-right {
 
 .team-slider .item { margin: 3px; }
 
-.owl-wrapper-outer { margin-bottom: 2.25em; }
+.owl-wrapper-outer { margin-bottom: 0em; }
 
 .team-details {
   position: relative;
