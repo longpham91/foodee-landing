@@ -344,7 +344,9 @@ $(function () {
             element.addClass("active");   
         }
 
-        element.appendTo("div.my-gallery");
+		if (index < 10) {
+        	element.appendTo("div.my-gallery");
+		}
     });
 
 	$('.my-gallery').owlCarousel({
