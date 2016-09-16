@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://foodee.io/</loc>
+  <lastmod>2016-09-15T04:47:41+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://foodee.io/#about</loc>
+  <lastmod>2016-09-15T04:47:41+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://foodee.io/#gallery</loc>
+  <lastmod>2016-09-15T04:47:41+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://foodee.io/#contact</loc>
+  <lastmod>2016-09-15T04:47:41+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://foodee.io/privacy.html</loc>
+  <lastmod>2016-08-31T08:25:32+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://foodee.io/terms.html</loc>
+  <lastmod>2016-05-11T19:02:05+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+</urlset>
