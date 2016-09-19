@@ -114,6 +114,9 @@ $(function () {
 					$('.success-mc p').html(data.message);
 					$('#mc-form input').val('');
 					$('.success-mc').fadeIn();
+					setTimeout(function () {
+						$('.success-mc').fadeOut();
+					}, 3000);
 				},
 				error: function (data) {
 					$('.error-mc p').html(data.responseJSON.message);
