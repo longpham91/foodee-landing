@@ -80,6 +80,21 @@ li {
   text-align: center;
 }
 
+.bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/bg-foodee.jpg) no-repeat;
+    background-size: cover;
+}
+
 .overlay { display: none; }
 
 .main:before {
