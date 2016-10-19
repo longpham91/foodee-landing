@@ -72,7 +72,8 @@ li {
    ========================================================================== */
    
 .main {
-  background: url(../img/bg-foodee.jpg) center center no-repeat scroll;
+  /*background: url(../img/bg-foodee.jpg) center center no-repeat scroll;*/
+  background: none;
   background-size: cover;
   padding: 3em 0 4.5em;
   position: relative;
@@ -730,7 +731,8 @@ body { height: 100%; }
 .main {
   padding: 4.5em 0 6em;
   text-align: left;
-  background: url(../img/bg-foodee.jpg) center center no-repeat fixed;
+  /*background: url(../img/bg-foodee.jpg) center center no-repeat fixed;*/
+  background: none;
   background-size: cover;
   min-height: 100%;
 }
@@ -965,7 +967,7 @@ a.my-gallery__img--main {
 .error-mc p {
   background: #FFE5E5;
   color: #ea5050;
-  border: 1px solid rgba(169, 82, 82, 0.18);
+  border: 1px solid (169, 82, 82, 0.18);
 }
 
 .success-mc i, .error-mc i { padding-right: .5em; }
