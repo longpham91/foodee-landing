@@ -593,8 +593,10 @@ blockquote .fa-quote-right {
    ========================================================================== */
    
 .video,
-.screenshot,
-.contact,
+/*.screenshot,*/
+/*.contact,*/
+.team,
+.site-footer,
 .reviews { background: #F7F7F7; }
 
 .site-footer.section-spacing { padding: 4.5em 0; }
