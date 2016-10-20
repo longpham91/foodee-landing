@@ -930,6 +930,10 @@ a.my-gallery__img--main {
   background: #d34836;
 }
 
+.bgPlayIcon {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .my-gallery {
     max-width: 500px;
@@ -941,6 +945,11 @@ a.my-gallery__img--main {
 
   .hero-img {
     display: none;
+  }
+
+  .bgPlayIcon {
+    display: block;
+    margin-top: 2em;
   }
 }
 
