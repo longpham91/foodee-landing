@@ -719,6 +719,7 @@ button.close {
 .reviews blockquote p { font-size: 22px; }
 
 .download i { font-size: 4em; }
+
 }
 
 /* ==========================================================================
@@ -929,13 +930,17 @@ a.my-gallery__img--main {
   background: #d34836;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .my-gallery {
     max-width: 500px;
   }
   .my-gallery a {
     width: 100%;
     margin: 0 8px 8px 0;
+  }
+
+  .hero-img {
+    visibility: hidden;
   }
 }
 
