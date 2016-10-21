@@ -12,8 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href="css/plugins.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <!-- Core CSS file -->
     <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/ekko-lightbox.min.css">
 
     <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
       In the folder of skin CSS file there are also:
@@ -109,7 +109,7 @@
                     <!--logo end-->
 
                     <!--play icon-->
-                    <a class="bgPlayIcon" href="" onclick="document.getElementById('bgvid').play(); return false;"><img src="img/play.png" style="max-width: 50px;" alt="play icon"></a>
+                    <a class="bgPlayIcon" data-toggle="lightbox" rel="youtube" href="https://www.youtube.com/watch?v=CrJK4BvpiOI"><img src="img/play.png" style="max-width: 50px;" alt="play icon"></a>
                     <!--logo end-->
 
                 </div>
@@ -643,6 +643,14 @@
     <script src="js/photoswipe-ui-default.min.js"></script>
 
     <script src="js/gallery.js"></script>
+
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
 
 </html>
