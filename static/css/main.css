@@ -72,8 +72,8 @@ li {
    ========================================================================== */
    
 .main {
-  /*background: url(../img/bg-foodee.jpg) center center no-repeat scroll;*/
-  background: none;
+  background: url(../img/bg-foodee.jpg) center center no-repeat scroll;
+  /*background: none;*/
   background-size: cover;
   padding: 3em 0 4.5em;
   position: relative;
@@ -734,8 +734,8 @@ body { height: 100%; }
 .main {
   padding: 4.5em 0 6em;
   text-align: left;
-  /*background: url(../img/bg-foodee.jpg) center center no-repeat fixed;*/
-  background: none;
+  background: url(../img/bg-foodee.jpg) center center no-repeat fixed;
+  /*background: none;*/
   background-size: cover;
   min-height: 100%;
 }
