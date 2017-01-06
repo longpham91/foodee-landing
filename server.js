@@ -41,7 +41,7 @@ app.use(function (error, request, response, next) {
 	});
 });
 
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 3000);
 
 app.listen(app.get('port'), () => {
 	console.log('Foodee service runs on port: ' + app.get('port'));
